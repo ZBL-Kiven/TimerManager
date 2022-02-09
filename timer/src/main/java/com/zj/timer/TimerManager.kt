@@ -22,7 +22,7 @@ object TimerManager {
     private val timeNodeSubscribers = ConcurrentHashMap<Long, TimeSubscriber>()
 
     /**
-     * If it is not necessary, do'nt use the same KEY to add to different time-lines to avoid notification confusion
+     * If it is not necessary, don't use the same KEY to add to different time-lines to avoid notification confusion
      * */
     fun addObserver(lw: LifecycleOwner, interval: Long, key: String, observer: Observer<Long>) {
         startTimer()
